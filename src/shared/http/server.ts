@@ -3,6 +3,7 @@ import cors from 'cors';
 import routes from './routes';
 import AppError from './errors/AppError';
 
+
 const app = express();
 
 app.use(cors());
