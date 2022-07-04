@@ -3,7 +3,8 @@ import { Router } from 'express';
 const routes = Router();
 
 routes.get('/', (request, response) => {
-  return response.json({ message: 'Hello Dev!' });
+  const randomNumber = () => Math.random();
+  return response.json({ message: 'Hello Dev!' + randomNumber() });
 });
 
 export default routes;
